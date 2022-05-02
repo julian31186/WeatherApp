@@ -29,7 +29,7 @@ app.get("/", (req,res) => {
        suffix:null,
        day: null
    })
-
+ 
 })
 
 app.post('/', async (req,res) => {
@@ -37,10 +37,11 @@ app.post('/', async (req,res) => {
     const url_api= `https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${process.env.API_KEY}`;
     const currentDate = new Date();
     
-
+    try {
     await fetch(url_api)
         .then(res => res.json())
         .then(data => {
+
                 //Kelvin to F conversion 
                 const temp = Math.floor(1.8 * (data.main.temp - 273.15) + 32);
                 const des = data.weather[0].main;
@@ -49,13 +50,18 @@ app.post('/', async (req,res) => {
                 const date = new Date().toLocaleDateString('default', {month: 'long'});
                 const day = currentDate.getDate();
                 const suffix = "st";
- 
 
+            
                 res.render('index', {
                     temp , des , city , country , date , suffix , day
                 });
             
-        })       
+        })      
+    } catch(err) {
+        res.render('index', {
+            temp: 0 , des: null , city: "Please enter a valid city" , country: null , date: null, suffix: null , day: null
+        });
+    } 
 
 })  
 
