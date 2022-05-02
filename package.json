@@ -1,5 +1,29 @@
 {
   "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.4",
     "sass": "^1.51.0"
-  }
+  },
+  "scripts": {
+    "start": "nodemon ./SERVER/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "name": "weatherapp",
+  "description": "My first weather app!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian31186/WeatherApp.git"
+  },
+  "author": "Julian Elmasry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julian31186/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/julian31186/WeatherApp#readme"
 }

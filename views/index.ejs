@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <article class="widget">
+            <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+            <div class="weatherInfo">
+
+              
+              <div class="temperature"><span>  <%=temp %>&deg;</span></div>
+              
+
+              <div class="description">    
+                <div class="weatherCondition"> <%= des %>  </div>    
+                <div class="place"> <%= city %>, <%= country %></div>
+              </div>
+            </div>
+            <div class="date"><%= date %> <%= day %><%= suffix %></div>
+          </article>   
+
+          <form action="/" method="POST">
+            <input type="text" name="zipcode" class="ghost-input" placeholder="Enter a zipcode">
+
+          </form>    
+
+    </body>
+</html>
