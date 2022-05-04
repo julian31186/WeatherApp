@@ -2,7 +2,7 @@
 This is a simple weather app I created using SCSS and ExpressJS. This is one of my first projects working with a backend.
 
 # Image
-
+<img src="https://cdn.discordapp.com/attachments/322439749904236545/971209379988766802/unknown.png" width="128"/>
 
 # Usage
 -Enter zipcode and this web app will display the degrees in farenheight as well as the location of the zipcode
