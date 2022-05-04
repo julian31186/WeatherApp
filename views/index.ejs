@@ -11,7 +11,7 @@
     </head>
     <body>
         <article class="widget">
-            <div class="weatherIcon"><i class="wi wi-day-cloudy"></i></div>
+            <div class="weatherIcon"><i class="<%=weatherIcon%>"></i></div>
             <div class="weatherInfo">
 
               
@@ -23,11 +23,11 @@
                 <div class="place"> <%= city %>, <%= country %></div>
               </div>
             </div>
-            <div class="date"><%= date %> <%= day %><%= suffix %></div>
+            <div class="date"><%= date %> <%= day %></div>
           </article>   
 
           <form action="/" method="POST">
-            <input type="text" name="zipcode" class="ghost-input" placeholder="Enter a zipcode">
+            <input type="text" name="zipcode" class="ghost-input center-block" placeholder="Enter a zipcode">
 
           </form>    
 

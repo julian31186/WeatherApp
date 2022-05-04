@@ -77,6 +77,21 @@ body {
   font-size: 30px;
   font-weight: 800;
 }
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height:50px;
+  font-size:25pt;
+  border-radius:20px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  margin-top:10%;
+}
+input::placeholder {
+  opacity: 0.5;
+}
 
 p {
   position: fixed;

@@ -26,8 +26,8 @@ app.get("/", (req,res) => {
        temp: null,
        country: null,
        date: null,
-       suffix:null,
-       day: null
+       day: null,
+       weatherIcon: "wi wi-day-sunny"
    })
  
 })
@@ -49,17 +49,27 @@ app.post('/', async (req,res) => {
                 const country = data.sys.country;
                 const date = new Date().toLocaleDateString('default', {month: 'long'});
                 const day = currentDate.getDate();
-                const suffix = "st";
+                const weatherIcon = `wi wi-day-${data.weather[0].main}`
 
+                if(data.weather[0].main === "Clouds" || data.weather[0].main === "Clear") {
+                    res.render('index', {
+                        temp , des , city , country , date , day , weatherIcon: "wi wi-cloudy"
+                    });
+                } else {
+
+                    res.render('index', {
+                        temp , des , city , country , date , day , weatherIcon
+                    });
+
+                }
+                
             
-                res.render('index', {
-                    temp , des , city , country , date , suffix , day
-                });
+               
             
         })      
-    } catch(err) {
+    } catch(err) {       
         res.render('index', {
-            temp: 0 , des: null , city: "Please enter a valid city" , country: null , date: null, suffix: null , day: null
+            temp: 0 , des: null , city: "Please enter a valid zip" , country: null , date: new Date().toLocaleDateString('default', {month: 'long'}), day: currentDate.getDate(), weatherIcon: "wi wi-day-cloudy"
         });
     } 
 
