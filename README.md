@@ -10,6 +10,6 @@ This is a simple weather app I created using SCSS and ExpressJS. This is one of 
 # Improvements / Updates For Future
 -Make site more responsive\
 -Add more icons for more specific weather conditions\
--More functionality features such as asking the suer their name and storing it within cookies for next time they open the site\
+-More functionality features such as asking the suer their name and storing it within cookies for next time they open the site
 
 
