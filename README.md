@@ -2,7 +2,7 @@
 This is a simple weather app I created using SCSS, NodeJS and ExpressJS. This is one of my first projects working with a backend as well as an API. I used the OpenWeather API in order to obtain the data for this project. I also learned a lot about version control with this project.
 
 # Live Version
-Coming Soon Once I fix stupid Heroku
+[Live Version](https://weather-app-julian.herokuapp.com/)
 
 # Image
 <img src="https://cdn.discordapp.com/attachments/322439749904236545/971209379988766802/unknown.png"/>
