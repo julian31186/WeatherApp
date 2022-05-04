@@ -1,5 +1,9 @@
 # WeatherApp
 This is a simple weather app I created using SCSS and ExpressJS. This is one of my first projects working with a backend as well as an API. I used the OpenWeather API in order to obtain the data for this project. I also learned a lot about version control with this project.
+<img src="https://cdn.discordapp.com/attachments/322439749904236545/971211155878076487/unknown.png"/>
+<img src="https://cdn.discordapp.com/attachments/322439749904236545/971211239940300800/unknown.png"/>
+<img src="https://cdn.discordapp.com/attachments/322439749904236545/971211314796068904/unknown.png"/>
+
 
 # Image
 <img src="https://cdn.discordapp.com/attachments/322439749904236545/971209379988766802/unknown.png"/>
